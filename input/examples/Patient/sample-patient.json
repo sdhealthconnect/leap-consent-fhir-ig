@@ -1,0 +1,40 @@
+{
+  "resourceType": "Patient",
+  "id": "sample-patient",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-09-07T04:28:02.697+00:00"
+  },
+  "identifier": [
+    {
+      "system": "https://github.com/sdhealthconnect/leap-consent-fhir-ig",
+      "value": "sample-patient"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "John",
+      "given": ["Doe"],
+      "prefix": ["Mr."]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-602-4587",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1966-06-07",
+  "address": [
+    {
+      "line": ["555 O'Connell Rue Apt 68"],
+      "city": "Tubac",
+      "state": "AZ",
+      "postalCode": "85646",
+      "country": "US"
+    }
+  ]
+}

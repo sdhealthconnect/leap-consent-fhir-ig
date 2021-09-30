@@ -1,0 +1,26 @@
+{
+  "package-id": "sdhealthconnect.leap-computable-consent",
+  "title": "LEAP Computable Consent",
+  "canonical": "https://github.com/sdhealthconnect/leap-consent-fhir-ig",
+  "introduction": "Computable FHIR Consent based on the ONC LEAP Project.",
+  "category": "Community-Based Care and Privacy (CBCP)",
+  "fhirversion": "4.0.1",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "https://github.com/sdhealthconnect/leap-consent-fhir-ig",
+      "fhirversion": "4.0.1",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.0.1",
+      "desc": "initial version",
+      "path": "https://github.com/sdhealthconnect/leap-consent-fhir-ig",
+      "fhirversion": "4.0.1",
+      "status": "ballot",
+      "sequence": "DSTU 1"
+    }
+  ]
+}
