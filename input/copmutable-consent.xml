@@ -41,8 +41,32 @@
       <reference>
         <reference value="Patient/sample-patient"/>
       </reference>
-      <name value="Sample patient"/>
-      <description value="Sample patient used in the other examples."/>
+      <name value="Sample Patient"/>
+      <description value="Sample patient."/>
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/sample-custodian-organization"/>
+      </reference>
+      <name value="Sample Custodian Organization"/>
+      <description value="Sample custodian organization."/>
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/sample-requesting-organization"/>
+      </reference>
+      <name value="Sample Requesting Organization"/>
+      <description value="Sample requesting organization."/>
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/optin-deny-based-on-label"/>
+      </reference>
+      <name value="Consent with Provisions Based on Security Labels"/>
+      <description value="Sample opt-in consent denying acccess to resources marked as Restricted."/>
       <exampleBoolean value="true" />
     </resource>
     <page>

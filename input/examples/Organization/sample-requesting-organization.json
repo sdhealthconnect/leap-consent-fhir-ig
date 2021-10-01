@@ -1,0 +1,15 @@
+{
+  "resourceType": "Organization",
+  "id": "sample-requesting-organization",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-09-14T04:42:54.346+00:00"
+  },
+  "identifier": [
+    {
+      "system": "https://github.com/sdhealthconnect/leap-consent-fhir-ig",
+      "value": "sample-requesting-ogranization"
+    }
+  ],
+  "name": "Sample Requesting Organization"
+}
