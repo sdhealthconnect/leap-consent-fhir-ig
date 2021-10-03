@@ -1,0 +1,220 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "sample-patient-privacy-questionnaire-response",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-09-10T04:52:22.395+00:00"
+  },
+  "questionnaire": "https://github.com/sdhealthconnect/leap-consent-fhir-ig/Questionnaire/sample-patient-privacy-questionnaire",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/sample-patient"
+  },
+  "authored": "2021-09-10T04:52:22+00:00",
+  "author": {
+    "reference": "Patient/sample-patient"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "item": [
+        {
+          "linkId": "1.1",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "1.2",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "1.3",
+          "item": [
+            {
+              "linkId": "1.3.1",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "1.3.2",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "1.3.3",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "1.3.4",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "1.3.5",
+              "answer": [
+                {
+                  "valueString": "2021-09-10"
+                }
+              ]
+            },
+            {
+              "linkId": "1.3.6",
+              "answer": [
+                {
+                  "valueString": "2022-09-10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "item": [
+        {
+          "linkId": "2.1",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "2.2",
+          "answer": [
+            {
+              "valueString": "FamilyMemberHistory"
+            },
+            {
+              "valueString": "BodyStructure"
+            },
+            {
+              "valueString": "ResearchSubject"
+            },
+            {
+              "valueString": "RelatedPerson"
+            },
+            {
+              "valueString": "InsurancePlan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "item": [
+        {
+          "linkId": "3.1",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "3.3",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "3.4",
+          "answer": [
+            {
+              "valueString": "Sample Requesting Organization"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "item": [
+        {
+          "linkId": "4.1",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "answer": [
+            {
+              "valueBoolean": true,
+              "item": [
+                {
+                  "linkId": "4.2.1",
+                  "answer": [
+                    {
+                      "valueString": "Sample Requesting Organization"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "item": [
+        {
+          "linkId": "5.1",
+          "answer": [
+            {
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "5.2",
+          "item": [
+            {
+              "linkId": "5.2.1",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}

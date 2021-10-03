@@ -65,8 +65,32 @@
       <reference>
         <reference value="Consent/optin-deny-based-on-label-and-type"/>
       </reference>
-      <name value="Consent with Provisions Based on Security Labels"/>
+      <name value="Consent with Provisions Based on Security Labels and Data Types"/>
       <description value="Sample opt-in consent denying acccess to resources marked as Restricted."/>
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/sample-consent-provenance"/>
+      </reference>
+      <name value="Sample Consent Provenance"/>
+      <description value="Sample provenance to record that a Consent resource is generated based on a QuestionnaireResponse resource."/>
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/sample-patient-privacy-questionnaire"/>
+      </reference>
+      <name value="Sample Consent Questionnaire"/>
+      <description value="Sample Questionnaire capturing a consent form."/>
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/sample-patient-privacy-questionnaire-response"/>
+      </reference>
+      <name value="Sample Consent QuestionnaireResponse"/>
+      <description value="ample QuestionnaireResponse capturing a patient's responses to a consent form."/>
       <exampleBoolean value="true" />
     </resource>
     <page>

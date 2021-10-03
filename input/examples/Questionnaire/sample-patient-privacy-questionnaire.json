@@ -1,0 +1,253 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "sample-patient-privacy-questionnaire",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-09-07T04:23:46.680+00:00"
+  },
+  "status": "active",
+  "experimental": true,
+  "subjectType": ["Patient"],
+  "date": "2021",
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "59284-0",
+      "display": "Consent Document"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Set the dates this consent will be in force.",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Use Default Option",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.2",
+          "text": "Custom Date Option",
+          "type": "boolean"
+        },
+        {
+          "linkId": "1.3",
+          "text": "Default date options, beginning today for:",
+          "type": "group",
+          "enableWhen": [
+            {
+              "question": "1.1",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "item": [
+            {
+              "linkId": "1.3.1",
+              "text": "24 Hours",
+              "type": "boolean"
+            },
+            {
+              "linkId": "1.3.2",
+              "text": "1 Year",
+              "type": "boolean"
+            },
+            {
+              "linkId": "1.3.3",
+              "text": "5 years",
+              "type": "boolean"
+            },
+            {
+              "linkId": "1.3.4",
+              "text": "10 Years",
+              "type": "boolean"
+            },
+            {
+              "linkId": "1.3.5",
+              "text": "Calculated start date and time based on option selection",
+              "type": "string"
+            },
+            {
+              "linkId": "1.3.6",
+              "text": "Calculated end date and time based on option selection",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "linkId": "1.4",
+          "text": "Set the dates this consent will be in force.",
+          "type": "group",
+          "enableWhen": [
+            {
+              "question": "1.2",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "item": [
+            {
+              "linkId": "1.4.1",
+              "text": "Start date and time",
+              "type": "dateTime"
+            },
+            {
+              "linkId": "1.4.2",
+              "text": "End date and time",
+              "type": "dateTime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Control what types of clinical information are exchanged.",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Allow all types of data to be exchanged.",
+          "type": "boolean"
+        },
+        {
+          "linkId": "2.2",
+          "text": "Deny access to the following types of data:",
+          "type": "string",
+          "repeats": true,
+          "enableWhen": [
+            {
+              "question": "2.1",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "The source of information being exchanged.",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Practitioner",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.2",
+          "text": "Practitioner - Custodian (Select from list).",
+          "type": "string",
+          "enableWhen": [
+            {
+              "question": "3.1",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "3.3",
+          "text": "Organization",
+          "type": "boolean"
+        },
+        {
+          "linkId": "3.4",
+          "text": "Organization - Custodian (Select from list).",
+          "type": "string",
+          "enableWhen": [
+            {
+              "question": "3.3",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "The Person, or Organization, requesting your information.",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Practitioner",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "4.1.1",
+              "text": "Practitioner - Recipient (Select from list).",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "4.1",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "text": "Organization",
+          "type": "boolean",
+          "item": [
+            {
+              "linkId": "4.2.1",
+              "text": "Organization - Recipient (Select from list).",
+              "type": "string",
+              "enableWhen": [
+                {
+                  "question": "4.2",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "If portions of my clinical record are privacy sensitive, I would like to:",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "5.1",
+          "text": "I do not have privacy concerns",
+          "type": "boolean"
+        },
+        {
+          "linkId": "5.2",
+          "text": "Remove them",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "5.2.1",
+              "text": "Remove all information flagged as confidential",
+              "type": "boolean",
+              "enableWhen": [
+                {
+                  "question": "5.1",
+                  "operator": "=",
+                  "answerBoolean": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "This last step will capture your signature and create a human readable pdf of this consent. (Electronic signature captured)",
+      "type": "boolean"
+    }
+  ]
+}
