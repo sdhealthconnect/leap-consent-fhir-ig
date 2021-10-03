@@ -63,7 +63,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Consent/optin-deny-based-on-label"/>
+        <reference value="Consent/optin-deny-based-on-label-and-type"/>
       </reference>
       <name value="Consent with Provisions Based on Security Labels"/>
       <description value="Sample opt-in consent denying acccess to resources marked as Restricted."/>
