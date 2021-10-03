@@ -225,3 +225,16 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "59284-0",
+  "display" : "Consent Document"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Consent Document",
+  "code" : "59284-0",
+  "system" : "http://loinc.org",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
